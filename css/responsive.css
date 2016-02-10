@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 768px) {
+
+/* ================================= 
+TWO COLUMN LAYOUT
+==================================== */
+
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.name,
+	.main-nav {
+		padding: 15px 0;
+	}
+	
+	.name,
+	.main-nav li{
+		background: none;	
+	}
+		
+	.main-nav li {
+		padding: 10px;
+		margin: 20px;	
+		display: inline;
+	}
+	
+		.banner {
+			background-color: #ffffff;
+			background-image: url('../images/background.jpg');
+			background-repeat: no-repeat;
+			background-position: top center;		
+	}
+		
+	.headline {
+		width: 60%;
+		text-align: left;
+		margin: 0;
+		padding-right: 1em;
+		float: left;	
+	}
+	
+	.headline,
+	.contact-headline,
+	.contact-headline li {
+		font-size: 1.2em;
+	}
+
+	.banner img {
+		width: 40%;
+		float: right;
+	}
+	
+	.container {
+		padding-right: 0;	
+		padding-left: 1em;
+	}
+			
+	.portfolio li {
+		width: 45%;
+		margin: 1em;
+		float: left;
+	}
+
+
+	.contact-headline {
+		margin: 0;
+		margin: 0;
+		padding-left: 100px;
+		padding-right: 100px;	
+	}
+
+/* ---- Footer ---- */
+
+	.secondary-footer {
+		display: none;
+		padding-right: 100px;
+	}
+	
+	.footer-nav li {
+		float: none;
+		padding: 0 32px;
+		list-style: none;
+		display: inline;
+	}
+	
+	.footer-nav {
+		padding-right: 32px;
+		float: right;
+	}
+	
+	.footer-nav li {
+		float: left;
+	}
+	
+	
+	.footer-nav a:hover {
+		color: #093a58;
+	}
+	
+	.footer-nav a {
+		font-size: .85em;
+		font-weight: bold;
+		color: #3a3a3a;
+		text-transform: uppercase;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+/* ================================= 
+THREE COLUMN LAYOUT
+==================================== */
+
+/* ================================= 
+3 * 5 = 15% for margins
+100% - 15% = 85%
+85 / 3 = 28.33333
+==================================== */
+
+	.main-header,
+	.main-footer {
+		padding-left: 3.8125em;
+		padding-right: 3.8125em;
+	}
+		
+	.name {
+		float: left;
+	}
+	
+	
+	.main-nav {
+		padding-left: 240px;
+		float: right;
+	}
+	
+	.main-nav li {
+		text-align: center;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		float: left;
+	}
+
+	.headline {
+		width: 60%;
+		text-align: left;
+		margin: 0;
+		padding-left: 1.75em;
+		padding-right: 1em;
+		float: left;	
+	}
+	
+	.headline,
+	.contact-headline,
+	.contact-headline li {
+		font-size: 1.30em;
+	}
+
+	.banner img {
+		padding-right: 1.75em;
+		width: 40%;
+		float: right;
+	}
+	
+	.container {
+		padding-right: 0;	
+		padding-left: 3em;
+	}
+	
+	.portfolio li {
+		width: 28.3333%;
+	}
+
+	.portfolio li:nth-child(4n) {
+		clear: left;
+	}
+	
+	.contact-headline {
+		margin: 0;
+		margin: 0;
+		padding-left: 200px;
+		padding-right: 200px;	
+	}
+	
+}
+
